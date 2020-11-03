@@ -9,13 +9,13 @@ composer install
 exit
 docker exec -it laravel-vue-docker-bookstore-db bash
 mysql --user=root --password
+123456
 ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY '123456';
 FLUSH PRIVILEGES;
 \q
 exit
 docker exec -it laravel-vue-docker-bookstore bash
 php artisan migrate:refresh
-php artisan migrate
 php artisan db:seed
 php artisan passport:install
 npm install
