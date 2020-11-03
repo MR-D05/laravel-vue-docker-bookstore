@@ -1,6 +1,6 @@
 # laravel-vue-docker-bookstore
 
-The following is a list of commands to execute to get this demo project up and running:
+The following is of executables designed to get this demo up and running:
 
 ```
 docker-compose up -d
