@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     sudo \
     unzip \
     git \
-    curl
+    curl \
     libpng-dev \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
@@ -20,8 +20,7 @@ RUN apt-get update && apt-get install -y \
     locales \
     zip \
     jpegoptim optipng pngquant gifsicle \
-    vim \
-
+    vim 
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
