@@ -18,7 +18,11 @@ php artisan migrate:refresh
 php artisan migrate
 php artisan db:seed
 php artisan passport:install
+npm install
+npm run dev
 ```
+
+Now navigate to http://localhost:8008/, generate a key and refresh.
 
 Helpful links and list of credentials:
 
